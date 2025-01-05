@@ -18,7 +18,7 @@ Melalui program magang virtual Project Based Internship (PBI) yang diselenggarak
 **Dataset**
 - Dataset Task 5 - [Lihat Dataset Dataset Task 5](https://drive.google.com/file/d/1RwsBQ1FriNfz6qiq0V5nD7gF7jO81To3/view)
 
-Desain Datamart
+Desain Data Master
 ---
 **Tabel Analisa**
 
@@ -27,21 +27,24 @@ Pada tahap ini, saya akan membuat tabel analisis dengan menggunakan 4 tabel, yai
 ![pt sejahtera bersama erd](https://github.com/user-attachments/assets/95eee23a-db98-48e3-9060-6465ddc255a2)
 
 Dari ERD yang diberikan, kita dapat menyimpulkan bahwa:
-- Setiap transaksi hanya berisi satu produk dan terjadi di satu cabang.
-- Namun, satu produk atau satu cabang dapat terlibat dalam lebih dari satu transaksi.
+- Setiap transaksi dalam tabel Orders dapat mencakup satu produk, seperti yang ditunjukkan oleh hubungan antara tabel Orders dan Products.
+- Satu produk (dalam tabel Products) dapat muncul di lebih dari satu transaksi.
+- Satu pelanggan (dalam tabel Customers) dapat melakukan lebih dari satu transaksi.
 
 Dari dashboard yang telah dibuat, terdapat beberapa insight yang bisa diambil yaitu:
 
-- Pertumbuhan yang tidak signifikan: Terutama pada total net sales, total net profil dan total transaction dari tahun ke tahun.
-- Jawa Barat Sebagai Kontributor Utama: Jawa Barat merupakan provinsi dengan kontribusi terbesar terhadap total penjualan, baik dari segi total transaction, total net profit, dan total net sales.
-- Produk Terlaris: Produk terlaris Kimia Farma adalah Psycholeptics drugs, Hypnotics and sedatives drugs, dengan total penjualan mencapai 134.849.
-- Rata-rata Penjualan Berbeda: Rata-rata penjualan per cabang berbeda-beda.
-- Peringkat Cabang yang bagus : Terlihat peningkatan peringkat cabang dengan rating cabang masih diatas 4 dan rating transaksi yang berada di angka 4.
+- PT Sejahtera Bersama mencatat 3,339 transaksi dengan total penjualan 1.8M dan 11.7K pesanan. Aktivitas ini mencerminkan performa bisnis yang stabil tetapi belum tentu menunjukkan tingkat minat pelanggan secara keseluruhan.
+- Kategori Robots mendominasi penjualan dengan kontribusi terbesar (743.5K), diikuti oleh Drones (477.4K). Kategori lainnya memiliki kontribusi yang lebih kecil.
+- Kategori eBooks mencatat jumlah pesanan tertinggi (3,123), diikuti oleh Training Videos (2,081). Ini menunjukkan kategori digital memiliki daya tarik yang kuat.
+- Robots (42.4%) dan Drones (27.2%) mendominasi distribusi produk, dengan total kontribusi lebih dari 69.4%. Kategori lainnya memiliki pangsa yang lebih kecil.
+- Titik penjualan berfokus di Amerika Utara, sementara wilayah Asia, Afrika, dan bagian dunia lainnya minim aktivitas.
+- Penjualan tertinggi terjadi di Januari (166K) dan terendah pada Oktober (126.5K), dengan fluktuasi sepanjang tahun.
 
 Dari insight yang telah dijabarkan di atas, kita dapat memberikan beberapa reccomendation:
 
-- Fokus pada Jawa Barat: Konsentrasikan strategi pemasaran dan distribusi di Jawa Barat untuk terus mendorong pertumbuhan penjualan.
-- Ekspansi ke Provinsi Lain: Pertimbangkan untuk membuka cabang baru di provinsi lain dengan potensi pertumbuhan tinggi seperti Sumatera Utara dan Jawa Timur.
-- Dorong Penjualan Produk Terlaris: Tingkatkan promosi dan strategi pemasaran produk-produk terlaris untuk meningkatkan penjualan lebih lanjut.
-- Tingkatkan Rating dan Transaksi Cabang: Kembangkan program pelatihan dan insentif bagi karyawan untuk meningkatkan rating dan transaksi cabang.
-- Analisis Performa Cabang: Melakukan analisis secara detail performa setiap cabang untuk menentukan strategi dan program yang efektif untuk meningkatkan penjualan.
+- Tingkatkan strategi pemasaran berbasis data untuk memahami kebutuhan pelanggan dan mendorong lebih banyak transaksi.
+- Fokus pada pengembangan produk unggulan seperti Robots dan Drones, sembari meningkatkan promosi pada kategori dengan penjualan rendah seperti Training Videos.
+- Pertahankan kualitas dan variasi produk digital untuk meningkatkan loyalitas pelanggan, serta lakukan promosi untuk kategori lain seperti Drone Kits dan Drones.
+- Lakukan strategi diversifikasi produk untuk kategori dengan pangsa kecil, seperti meningkatkan inovasi pada Robot Kits dan Drone Kits.
+- Tingkatkan ekspansi ke pasar Asia dan Afrika untuk memperluas cakupan bisnis dan mendiversifikasi pasar.
+- Analisis penyebab fluktuasi, seperti pengaruh musim atau promosi, dan jadwalkan kampanye pemasaran besar untuk periode dengan penurunan penjualan.
